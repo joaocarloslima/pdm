@@ -1,0 +1,22 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Bolo de Chocolate",
+            "imagePath": "https://img.freepik.com/free-photo/close-up-fancy-dessert_23-2150527565.jpg?t=st=1688655003~exp=1688658603~hmac=84829cbb20876216de8d7e408378e6b1c44686855c3d414865b445e20bb5f7b4&w=1380",
+            "preco": 8
+        },
+        {
+            "id": 2,
+            "nome": "Café",
+            "imagePath": "https://img.freepik.com/free-photo/heart-shaped-coffee-beans-cup-latte-wooden-table-generative-ai_191095-1859.jpg?t=st=1688655028~exp=1688658628~hmac=235830c0b61f4bb5038d1c08791c6415b95728a7382f07ad51aebddd4a416bb6&w=1380",
+            "preco": 4
+        },
+        {
+            "id": 3,
+            "nome": "Wafle",
+            "imagePath": "https://img.freepik.com/free-photo/waffles-with-bacon-plate-with-cup-coffee_24640-80726.jpg?size=626&ext=jpg&uid=R86607559&ga=GA1.2.1164337990.1669920853&semt=sph",
+            "preco": 10
+        }
+    ]
+}
