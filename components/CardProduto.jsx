@@ -1,7 +1,12 @@
 import { Image, Text, View, TouchableOpacity } from 'react-native';
 import { styles } from '../style';
+import { useState } from 'react';
 
 export default function CardProduto({ produto }) {
+    const [quantidade, setQuantidade] = useState(0)
+
+    const handleAdd = () => setQuantidade(quantidade + 1)
+    const handleMinus = () => setQuantidade(quantidade && quantidade - 1)
     
     return (
         <View style={styles.pedidos}>
@@ -15,11 +20,11 @@ export default function CardProduto({ produto }) {
                 </View>
 
                 <View style={styles.spinner}>
-                    <TouchableOpacity >
+                    <TouchableOpacity onPress={handleMinus} >
                         <Text style={styles.spinnerMinus}>-</Text>
                     </TouchableOpacity>
-                    <Text style={styles.spinnerValue}>0</Text>
-                    <TouchableOpacity >
+                    <Text style={styles.spinnerValue}>{quantidade}</Text>
+                    <TouchableOpacity onPress={handleAdd} >
                         <Text style={styles.spinnerPlus}>+</Text>
                     </TouchableOpacity>
                 </View>
